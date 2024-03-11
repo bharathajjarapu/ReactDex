@@ -40,7 +40,7 @@ function App() {
     setSearchQuery(query);
 
     try {
-      const response = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=1000`);
+      const response = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=150`);
       const pokemonData = await Promise.all(
         response.data.results.map((pokemon) => fetchPokemonDetails(pokemon.url))
       );
