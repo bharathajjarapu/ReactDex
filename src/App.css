@@ -1,0 +1,255 @@
+.App.light-mode {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.App.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+  background-color: #343a40;
+  color: #e9ecef;
+  border-radius: 8px;
+}
+
+.App.light-mode header {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  width: 50%;
+}
+
+input {
+  padding: 6.5px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #212529;
+  margin-right: 8px;
+  width: 100%;
+}
+
+.App.light-mode input {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.mode-toggle {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.App.dark-mode .mode-toggle {
+  background-color: #6e7781;
+  color: #ffffff;
+}
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.pokemon-card {
+  background-color: #ffffff;
+  padding: 16px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.App.light-mode .pokemon-card {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.App.dark-mode .pokemon-card {
+  background-color: #2d333b;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.dialog {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App.dark-mode .dialog {
+  background-color: #2d333b;
+  color: #ffffff;
+}
+
+.dialog-content {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.App.dark-mode .close-button {
+  background-color: #e83e8c;
+}
+
+.no-results {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.show-more-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.App.dark-mode .show-more-button {
+  background-color: #6e7781;
+  color: #ffffff;
+}
+
+.details-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.detail-item {
+  background-color: #e9ecef;
+  color: #212529;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+.App.dark-mode .detail-item {
+  background-color: #343a40;
+  color: #e9ecef;
+}
+
+.detail-value {
+  font-weight: bold;
+}
+
+.abilities-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ability-item {
+  background-color: #e9ecef;
+  color: #212529;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+.App.dark-mode .ability-item {
+  background-color: #343a40;
+  color: #e9ecef;
+}
+
+.pokemon-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-details img {
+  max-width: 200px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .pokemon-details img {
+    max-width: 150px;
+  }
+
+  .pokemon-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .dialog {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .dialog-content {
+    width: 100%;
+  }
+}
