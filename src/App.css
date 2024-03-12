@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Consolas&display=swap');
+
 html, body {
   height: 100%;
   width: 100%;
+  font-family: 'Consolas', monospace, bold;
 }
 
 .App.light-mode {
@@ -77,6 +81,7 @@ input {
   gap: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: 'Press Start 2P';
 }
 
 .pokemon-card {
