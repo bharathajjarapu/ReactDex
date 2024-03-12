@@ -1,4 +1,4 @@
-# ReactDev
+# ReactDex is a Pokedex
 
 This is a simple Pokemon Search with Pokemon API which passes images and details to the website
 
