@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ReactDex/static/css/main.77193f7c.css",
+    "main.css": "/ReactDex/static/css/main.90057dea.css",
     "main.js": "/ReactDex/static/js/main.7d34c91c.js",
     "static/js/453.0cc0ac16.chunk.js": "/ReactDex/static/js/453.0cc0ac16.chunk.js",
     "index.html": "/ReactDex/index.html",
-    "main.77193f7c.css.map": "/ReactDex/static/css/main.77193f7c.css.map",
+    "main.90057dea.css.map": "/ReactDex/static/css/main.90057dea.css.map",
     "main.7d34c91c.js.map": "/ReactDex/static/js/main.7d34c91c.js.map",
     "453.0cc0ac16.chunk.js.map": "/ReactDex/static/js/453.0cc0ac16.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77193f7c.css",
+    "static/css/main.90057dea.css",
     "static/js/main.7d34c91c.js"
   ]
 }
